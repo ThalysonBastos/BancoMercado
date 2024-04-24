@@ -21,7 +21,7 @@ def verifica_credenciais():
     print("Conectado com Sucesso! ")
 ''' 
     #Executando uma query seleciona os usuparios que possui nome e senha inseridos pelo usuário.
-    cursor.execute("SELECT * FRON Usuarios WHERE Nome = ? AND Senha = ? ", (nome_usuario_entry.get(), senha_usuario_entry.get()))
+    cursor.execute("SELECT * FROM Usuarios WHERE Nome = ? AND Senha = ? ", (nome_usuario_entry.get(), senha_usuario_entry.get()))
 
     #recebendo o resultado da query acima 
     usuario = cursor.fetchone()
